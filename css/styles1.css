@@ -1,0 +1,157 @@
+/* -----ALL----- */
+
+html,
+body {
+    font-size: 100%;
+    background-image: url('../assets/clouds.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    font-family: 'Dancing Script', cursive;
+}
+
+
+/* -----UNIVERSAL----- */
+
+.center {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.blur {
+    opacity: 0.6;
+}
+
+
+/* -----HEADER MAIN----- */
+
+.main-header {
+    text-align: center;
+    font-size: 6vw;
+}
+
+
+/* -----GRID----- */
+
+.grid-container {
+    display: grid;
+    grid-template-areas: "header header header""grid-l grid-mid grid-r""footer footer footer";
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 2fr 1fr;
+}
+
+.grid-header {
+    grid-area: header;
+}
+
+.grid-l {
+    grid-area: grid-l;
+}
+
+.grid-mid {
+    grid-area: grid-mid;
+}
+
+.grid-r {
+    grid-area: grid-r;
+}
+
+.grid-footer {
+    grid-area: footer;
+}
+
+
+/* -----MODAL GRID----- */
+
+.modal-container {
+    display: grid;
+    grid-template-areas: "header header header""grid-l grid-mid grid-r""footer footer footer";
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 2fr 1fr;
+    display: none;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+}
+
+.modal-header {
+    grid-area: header;
+    text-align: center;
+    font-size: 4vw;
+    font-weight: normal;
+    padding-bottom: 5px;
+}
+
+.modal-l {
+    grid-area: grid-l;
+}
+
+.modal-mid {
+    grid-area: grid-mid;
+}
+
+.modal-r {
+    grid-area: grid-r;
+}
+
+.modal-footer {
+    grid-area: footer;
+}
+
+
+/* -----MODAL BUTTON----- */
+
+.modal-btn {
+    width: 50vw;
+    height: 25vh;
+    font-size: 6vw;
+    border-radius: 20px;
+    box-shadow: 5px 5px 10px black;
+    font-family: 'Dancing Script', cursive;
+    font-weight: 900;
+    background: #575757;
+    background: -moz-radial-gradient(center, #575757 0%, #ffffff 0%, #575757 100%);
+    background: -webkit-radial-gradient(center, #575757 0%, #ffffff 0%, #575757 100%);
+    background: radial-gradient(ellipse at center, #575757 0%, #ffffff 0%, #575757 100%);
+    color: rgb(0, 53, 105);
+    text-shadow: 2px 2px 2px rgb(255, 196, 0), -2px -2px 2px rgb(255, 196, 0), -2px 2px 2px rgb(255, 196, 0), 2px -2px rgb(255, 196, 0), 0 0 2px rgb(255, 196, 0), 2px 0 2px rgb(255, 196, 0), 0 2px 2px rgb(255, 196, 0), -2px 0 2px rgb(255, 196, 0), 0 -2px 2px rgb(255, 196, 0), 5px 5px 5px black;
+}
+
+.modal-btn:hover {
+    color: rgb(0, 103, 206);
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.modal-btn:focus {
+    outline: none;
+}
+
+
+/* -----MODAL CONTENT----- */
+
+.modal-content {
+    margin-bottom: 10%;
+    padding: 20px;
+    border: 5px groove rgb(255, 196, 0);
+    width: 80%;
+    height: 80%;
+    border-radius: 20px;
+    text-shadow: 5px 5px 5px black;
+    color: rgb(0, 53, 105);
+    background-color: blue;
+}
+
+
+/* -----MODAL HEADER----- */
+
+.modal-header {
+    text-align: center;
+}
