@@ -32,7 +32,20 @@ body {
 
 .main-header {
     text-align: center;
-    font-size: 6vw;
+    font-size: 7vw;
+    padding: 5% 5% 0 5%;
+}
+
+.author {
+    text-align: right;
+    font-size: 3vw;
+    padding: 5px 5% 0 0;
+}
+
+.main-header,
+.author {
+    color: rgb(0, 53, 105);
+    text-shadow: 2px 2px 2px rgba(131, 72, 187, 0.5), -2px -2px 2px rgba(131, 72, 187, 0.5), -2px 2px 2px rgba(131, 72, 187, 0.5), 2px -2px 2px rgba(131, 72, 187, 0.5), 0 0 2px rgba(131, 72, 187, 0.5), 2px 0 2px rgba(131, 72, 187, 0.5), 0 2px 2px rgba(131, 72, 187, 0.5), -2px 0 2px rgba(131, 72, 187, 0.5), 0 -2px 2px rgba(131, 72, 187, 0.5), 5px 5px 4px black;
 }
 
 
@@ -81,12 +94,17 @@ body {
     height: 100%;
 }
 
+
+/* -----MODAL HEADER----- */
+
 .modal-header {
     grid-area: header;
     text-align: center;
-    font-size: 4vw;
+    font-size: 5vw;
     font-weight: normal;
     padding-bottom: 5px;
+    text-align: center;
+    text-shadow: 2px 2px 2px rgb(255, 196, 0), -2px -2px 2px rgb(255, 196, 0), -2px 2px 2px rgb(255, 196, 0), 2px -2px rgb(255, 196, 0), 0 0 2px rgb(255, 196, 0), 2px 0 2px rgb(255, 196, 0), 0 2px 2px rgb(255, 196, 0), -2px 0 2px rgb(255, 196, 0), 0 -2px 2px rgb(255, 196, 0), 5px 5px 5px black;
 }
 
 .modal-l {
@@ -142,16 +160,103 @@ body {
     padding: 20px;
     border: 5px groove rgb(255, 196, 0);
     width: 80%;
-    height: 80%;
+    height: 85%;
     border-radius: 20px;
     text-shadow: 5px 5px 5px black;
     color: rgb(0, 53, 105);
-    background-color: blue;
+    background-image: url("../assets/clouds3.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 }
 
 
-/* -----MODAL HEADER----- */
+/* -----The 3 Headings----- */
 
-.modal-header {
+.threeheaders {
     text-align: center;
+    font-size: 3vw;
+    padding: 10% 0;
+    text-shadow: 2px 2px 2px rgb(255, 196, 0), -2px -2px 2px rgb(255, 196, 0), -2px 2px 2px rgb(255, 196, 0), 2px -2px rgb(255, 196, 0), 0 0 2px rgb(255, 196, 0), 2px 0 2px rgb(255, 196, 0), 0 2px 2px rgb(255, 196, 0), -2px 0 2px rgb(255, 196, 0), 0 -2px 2px rgb(255, 196, 0), 5px 5px 5px black;
+}
+
+
+/* -----SELECTION DROPDOWN----- */
+
+.custom-select {
+    width: 100%;
+    overflow: auto;
+}
+
+.dropdown {
+    width: 100%;
+    background-color: rgb(0, 53, 105);
+    color: white;
+    text-shadow: 2px 2px 2px rgba(131, 72, 187, 0.5), -2px -2px 2px rgba(131, 72, 187, 0.5), -2px 2px 2px rgba(131, 72, 187, 0.5), 2px -2px 2px rgba(131, 72, 187, 0.5), 0 0 2px rgba(131, 72, 187, 0.5), 2px 0 2px rgba(131, 72, 187, 0.5), 0 2px 2px rgba(131, 72, 187, 0.5), -2px 0 2px rgba(131, 72, 187, 0.5), 0 -2px 2px rgba(131, 72, 187, 0.5), 5px 5px 4px black;
+    border-radius: 8px;
+    padding: 5%;
+    font-size: 2vw;
+    opacity: 0.6;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 900;
+}
+
+
+/* -----HZ MID SECTION----- */
+
+.hz,
+.info {
+    text-align: center;
+    opacity: 0.7;
+    font-size: 3vw;
+    color: rgb(0, 53, 105);
+    text-shadow: 2px 2px 2px rgba(131, 72, 187, 0.5), -2px -2px 2px rgba(131, 72, 187, 0.5), -2px 2px 2px rgba(131, 72, 187, 0.5), 2px -2px 2px rgba(131, 72, 187, 0.5), 0 0 2px rgba(131, 72, 187, 0.5), 2px 0 2px rgba(131, 72, 187, 0.5), 0 2px 2px rgba(131, 72, 187, 0.5), -2px 0 2px rgba(131, 72, 187, 0.5), 0 -2px 2px rgba(131, 72, 187, 0.5), 5px 5px 4px black;
+    font-weight: 900;
+    font-family: 'Raleway', sans-serif;
+}
+
+.info {
+    font-size: 120%;
+    line-height: 1.5;
+    overflow: auto;
+    font-family: 'Raleway', sans-serif;
+}
+
+.player {
+    display: none;
+    position: relative;
+    width: 33%;
+    bottom: 100%;
+    left: 33%;
+    padding: 10% 0;
+    outline: none;
+    position: fixed;
+}
+
+
+/* -----FOOTER----- */
+
+.social {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.social-links {
+    width: 70%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    padding: 5%;
+}
+
+.icons {
+    padding: 3%;
+    color: rgb(0, 53, 105);
+    text-shadow: 2px 2px 2px rgba(131, 72, 187, 0.5), -2px -2px 2px rgba(131, 72, 187, 0.5), -2px 2px 2px rgba(131, 72, 187, 0.5), 2px -2px 2px rgba(131, 72, 187, 0.5), 0 0 2px rgba(131, 72, 187, 0.5), 2px 0 2px rgba(131, 72, 187, 0.5), 0 2px 2px rgba(131, 72, 187, 0.5), -2px 0 2px rgba(131, 72, 187, 0.5), 0 -2px 2px rgba(131, 72, 187, 0.5), 5px 5px 4px black;
+    opacity: 0.8;
+}
+
+.icons:hover {
+    opacity: 1;
 }

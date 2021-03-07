@@ -7,6 +7,7 @@
     <link href="css/RESET.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Raleway&display=swap" rel="stylesheet">
+    <link href="css/all.min.css" rel="stylesheet">
     <link href="css/styles1.css" rel="stylesheet">
     <script src="js/jquery-3.6.0.js" defer></script>
     <script src="js/main.js" defer></script>
@@ -17,43 +18,70 @@
 <body class="grid-container">
     <header class="grid-header">
         <h1 class="main-header blur">Experience The Power Of Sound</h1>
-        <p>By: Eric Dollinger..</p>
+        <p class="author blur">By: Eric Dollinger...</p>
     </header>
     <main>
         <!-- Modal Button -->
-        <button class="modal-btn center" id="myBtn">Heal Yourself</button>
+        <button class="modal-btn center" id="myBtn" title="Enter for Healing">Heal Yourself</button>
 
         <!-- Modal Container -->
         <div id="myModal" class="modal-container">
 
             <!-- Modal Content -->
             <div class="modal-content center grid-container">
-                <h2 class="modal-header">asdkjakdjf</h2>
+                <h2 class="modal-header">Good Vibes...</h2>
                 <span class="close">&times;</span>
                 <div class="grid-l">
-                    <select id="select">
+                    <h3 class="threeheaders">Healing Options</h3>
+                    <div class="custom-select">
+                        <select class="dropdown" id="select">
                         <option id="val1" value="1">Memory</option>
                         <option id="val2" value="2">Pain and Stress</option>
-                        <option id="val3" value="3">Physical Healing(External)</option>
+                        <option id="val3" value="3">Physical Healing</option>
                         <option id="val4" value="4">Fear and Negativity</option>
                         <option id="val5" value="5">Negative Energy Removal</option>
-                        <option id="val6" value="6">Mental Clarity and Spiritual Development</option>
+                        <option id="val6" value="6">Spiritual Development</option>
                         <option id="val7" value="7">Cognitive Development</option>
                         <option id="val8" value="8">Miracle Tone</option>
                         <option id="val9" value="9">Harmoney and Positivity</option>
-                        <option select="selected" id="val10" value="10">Depression and Anxiety</option>
+                        <option id="val10" value="10">Depression and Anxiety</option>
                         <option id="val11" value="11">Frequency of the Gods</option>
                       </select>
+                    </div>
                 </div>
                 <div class="grid-mid">
-                    <div id="pick"></div>
+                    <h3 class="threeheaders">Healing Frequency</h3>
+                    <div class="hz" id="pick"></div>
+
                 </div>
                 <div class="grid-r">
+                    <h3 class="threeheaders">Healing Information</h3>
+                    <div class="info-container" id="info-container">
+                        <p class="info" id="info"></p>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <div>
+                        <audio class="player" id="player" autoplay controls>
+                            <source id="ogg-src"  type="audio/ogg">
+                            
+                            Your browser does not support the audio element.
+                      </audio>
+
+
+                    </div>
                 </div>
             </div>
-        </div>
     </main>
-    <footer class="grid-footer">
+
+    </div>
+    <footer class="grid-footer social blur2">
+        <div class="social-links">
+            <a href="#" class="icons" title="Linkedin"><i class="icons fab fa-linkedin fa-3x"></i></a>
+            <a href="#" class="icons" title="Facebook"><i class="fab fa-facebook fa-3x"></i></a>
+            <a href="#" class="icons" title="Twitter"><i class="fab fa-twitter fa-3x"></i></a>
+            <a href="#" class="icons" title="GitHub"><i class="fab fa-github fa-3x"></i></a>
+        </div>
 
     </footer>
 
