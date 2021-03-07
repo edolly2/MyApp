@@ -251,7 +251,7 @@ body {
     opacity: 1;
 }
 
-@media screen and (min-width: 850px) {
+@media screen and (max-width: 850px) {
     .modal-container {
         display: grid;
         grid-template-areas: "modal-header" "modal-l" "modal-mid" "modal-r""modal-footer";
