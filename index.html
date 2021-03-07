@@ -14,24 +14,24 @@
 
     <title>Heal Through sound</title>
 </head>
-
-<body class="grid-container">
+<body>
+<div class="grid-container">
     <header class="grid-header">
         <h1 class="main-header blur">Experience The Power Of Sound</h1>
         <p class="author blur">By: Eric Dollinger...</p>
     </header>
-    <main>
-        <!-- Modal Button -->
-        <button class="modal-btn center" id="myBtn" title="Enter for Healing">Heal Yourself</button>
-
+    <!-- Modal Button -->
+    <button class="modal-btn center" id="myBtn" title="Enter for Healing">Heal Yourself</button>
+</div>
+<main>
         <!-- Modal Container -->
         <div id="myModal" class="modal-container">
 
             <!-- Modal Content -->
-            <div class="modal-content center grid-container">
+            <div class="modal-content center">
                 <h2 class="modal-header">Good Vibes...</h2>
                 <span class="close">&times;</span>
-                <div class="grid-l">
+                <div class="modal-l">
                     <h3 class="threeheaders">Healing Options</h3>
                     <div class="custom-select">
                         <select class="dropdown" id="select">
@@ -49,29 +49,34 @@
                       </select>
                     </div>
                 </div>
-                <div class="grid-mid">
+                <div class="modal-mid">
                     <h3 class="threeheaders">Healing Frequency</h3>
                     <div class="hz" id="pick"></div>
 
                 </div>
-                <div class="grid-r">
+                <div class="modal-r">
                     <h3 class="threeheaders">Healing Information</h3>
                     <div class="info-container" id="info-container">
                         <p class="info" id="info"></p>
                     </div>
                 </div>
-                <div class="modal-footer">
-                    <div>
-                        <audio class="player" id="player" autoplay controls>
-                            <source id="ogg-src"  type="audio/ogg">
-                            
-                            Your browser does not support the audio element.
-                      </audio>
+                
+                    
 
 
-                    </div>
-                </div>
+                    
+                
             </div>
+            <div class="audio-container modal-footer">
+                <audio class="player" id="player" autoplay controls>
+                    <source id="ogg-src"  type="audio/ogg">
+                    
+                    Your browser does not support the audio element.
+              </audio>
+
+
+            
+        </div>
         </div>
     </main>
 

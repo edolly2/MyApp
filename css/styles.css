@@ -98,7 +98,7 @@ body {
 /* -----MODAL HEADER----- */
 
 .modal-header {
-    grid-area: header;
+    grid-area: modal-header;
     text-align: center;
     font-size: 5vw;
     font-weight: normal;
@@ -106,23 +106,6 @@ body {
     text-align: center;
     text-shadow: 2px 2px 2px rgb(255, 196, 0), -2px -2px 2px rgb(255, 196, 0), -2px 2px 2px rgb(255, 196, 0), 2px -2px rgb(255, 196, 0), 0 0 2px rgb(255, 196, 0), 2px 0 2px rgb(255, 196, 0), 0 2px 2px rgb(255, 196, 0), -2px 0 2px rgb(255, 196, 0), 0 -2px 2px rgb(255, 196, 0), 5px 5px 5px black;
 }
-
-.modal-l {
-    grid-area: grid-l;
-}
-
-.modal-mid {
-    grid-area: grid-mid;
-}
-
-.modal-r {
-    grid-area: grid-r;
-}
-
-.modal-footer {
-    grid-area: footer;
-}
-
 
 /* -----MODAL BUTTON----- */
 
@@ -199,6 +182,7 @@ body {
     opacity: 0.6;
     font-family: 'Raleway', sans-serif;
     font-weight: 900;
+    grid-area: modal-l;
 }
 
 
@@ -215,22 +199,28 @@ body {
     font-family: 'Raleway', sans-serif;
 }
 
+.hz {
+    grid-area: modal-mid;
+}
+
 .info {
     font-size: 120%;
     line-height: 1.5;
     overflow: auto;
     font-family: 'Raleway', sans-serif;
+    grid-area: modal-r;
 }
 
 .player {
     display: none;
     position: relative;
     width: 33%;
-    bottom: 100%;
+    top: 70%;
     left: 33%;
     padding: 10% 0;
     outline: none;
     position: fixed;
+    grid-area: modal-footer;
 }
 
 
@@ -260,3 +250,24 @@ body {
 .icons:hover {
     opacity: 1;
 }
+
+@media screen and (min-width: 850px) {
+    .modal-container {
+        display: grid;
+        grid-template-areas: "modal-header" "modal-l" "modal-mid" "modal-r""modal-footer";
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 2fr 1fr 2fr 1fr;
+        display: none;
+        position: fixed;
+        top: 0;
+        z-index: 1;
+        width: 100%;
+        height: 100%;
+    }
+    .audio-container, .player {
+
+        position: relative;
+        bottom: 110%;
+    }
+    
+  }
