@@ -270,5 +270,8 @@ body {
         position: relative;
      
     }
+    .info {
+        overflow-y: auto;
+    }
     
   }
